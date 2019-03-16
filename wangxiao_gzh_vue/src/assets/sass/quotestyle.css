@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	font-family:"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+html, body , #app{
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+    background:#f2f2f2;
+}
+.clearfix:after,.clearfix:before{
+    content:"";/*加一段内容*/
+    display:table;/*创建匿名的表格单元，触发bfc*/
+ }
+.clearfix:after{
+    clear:both;/*清除浮动*/
+}
+.clearfix{
+    zoom:1;/*为IE6，7的兼容性设置*/
+}
+ul li {
+    list-style: none;
+}
+/* 一级页面box */
+.LeveloneBox{
+    padding-bottom: 1.2rem;
+}
+/* 二级页面box */
+.LeveltwoBox{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 101;
+    background: white;
+}
+/* vux时间控件字体大小 */
+.scroller-item{
+    font-size: 0.46rem !important;
+}
+.mu-item  .mu-item-action {
+    min-width: 0;
+    justify-content: flex-end !important;
+  }
+/* 路由跳转动画 */
+.fadeIn-enter{
+    opacity: 0;
+  }
+.fadeIn-enter-active{
+    transition: all 0.3s linear
+}
+.fadeIn-leave-active{
+    transition: all 0.3s linear;
+    opacity: 0;
+}
+.self-banner{
+    height:4.12rem;
+}
+.self-banner .mu-carousel-indicators{
+    height:auto;
+}
+.self-banner .mu-carousel-indicator-button{
+    margin:0;
+}
+.self-banner .mu-carousel-item>img{
+    width:100%;
+    height:100%;
+}
+.mulist-self .mu-item{
+    height:2.5rem;
+    padding: .3rem 0;
+}
+.layout.mu-tabs{
+    position: fixed;
+    bottom: 0;
+}
+.layout .mu-tab img{
+width: 20px;
+}
+.layout .mu-tab-wrapper{
+    padding: 0.14rem 0;
+}
+/* btn按钮 */
+.conmmon_btn{
+    width: 6.1rem;
+    height: 0.88rem;
+    text-align: center;
+    background: #ff6951;
+    line-height: 0.88rem;
+    color: #ffffff;
+    font-size: 0.36rem;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+}
+.mu-input__focus{
+/* color:  #ff6951; */
+color:  transparent;
+}
+.myList .mu-item.has-avatar{
+    height:50px;
+}
+.mu-tab-link-highlight{
+    background-color:#ff6951;
+}
+.list-basic .mu-text-field-input{
+    height:48px;
+}
+.list-basic .mu-input-help{
+    bottom:3px;
+    text-align:right;
+}
+.list-basic .mu-input-help div:nth-child(2){
+    display:none;
+}
+.list-basic .mu-text-field-input{
+    text-align:right;
+}
+/* 一级弹框 */
+.mu-dialog-fullscreen {
+    height: 80% !important;
+    top: auto;
+  }
+/* 金额，保存。提交 按钮 */
+.col, .col-3, .col-6 {
+padding: 0 ;
+}
+/* vux日期 产品详情*/
+body .dp-container{
+    z-index: 999999999999;
+}
+body .dp-mask{
+    z-index: 99999999;
+}
+.datesbbbbbbb .mu-item-content div:first-of-type{
+    width: 38%;
+    float: left;
+}
+.birth div:first-of-type{
+    width: 38%;
+    float: left;
+}
+/* 产品详情日期 */
+.mu-item .weui-cell{
+    padding: 0;
+}
+/* vux日期 保单填写详情*/
+.mu-item .vux-datetime{
+    width: 100%;
+}
+.spellBox .mu-item .weui-cell{
+    padding: 0;
+    color:#666;
+    font-size:0.28rem;
+}
+.datesbbbbbbb .mu-item .vux-datetime div:first-of-type{
+    width: 29%;
+    float: left;
+}
+.weui-cell_access .weui-cell__ft{
+    text-align: left;
+}
+/* 填写信息 弹框 */
+.spellBox .popuoAlert{
+    height:300px !important;
+    background: #fff;
+    text-align:center
+}
