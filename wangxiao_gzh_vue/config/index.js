@@ -12,14 +12,14 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
         '/h5/api': {  //使用"/api"来代替"http://f.apiplus.c" 
-            target: 'http://192.168.147.111:8102/h5/api/', //源地址  siwei
+            target: 'http://xxx:8102/h5/api/', //源地址  siwei
             changeOrigin: true, //改变源 
             pathRewrite: { 
               '^/h5/api': '' //路径重写 
             } 
         },
         '/pay/api': {  //使用"/api"来代替"http://f.apiplus.c" 
-            target: 'http://192.168.147.111:8504/pay/api/', //源地址 
+            target: 'http://xxxx:8504/pay/api/', //源地址 
             changeOrigin: true, // 改变源
             pathRewrite: { 
               '^/pay/api': '' //路径重写
