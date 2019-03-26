@@ -44,7 +44,7 @@ import './assets/js/validator.js'
 
 import '@/permission' // 权限
 import {default as api} from './utils/api'
-// import {hasPermission} from "./utils/hasPermission"; // 朱杰
+// import {hasPermission} from "./utils/hasPermission"; // 
 import * as hasPermission from "./utils/hasPermission";
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
@@ -56,7 +56,7 @@ import './assets/sass/quotestyle.css';
 import App from './App'
 Vue.prototype.api = api
 //全局的常量
-// Vue.prototype.hasPerm = hasPermission // 朱杰
+// Vue.prototype.hasPerm = hasPermission // 
 Vue.prototype.hasPerm = hasPermission.ConstHasPerm;
 Vue.prototype.globalVariable = hasPermission.colorList;
 
